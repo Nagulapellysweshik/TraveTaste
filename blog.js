@@ -9,6 +9,7 @@ if(id){
     s1 += `<img src=${curBlog.image}>`
     s1 += curBlog.content
     blogContainer.innerHTML = s1
+    window.location.hash = `${Number(id)+1}`
     localStorage.clear("id")
 }
 else{
