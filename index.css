@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hidden{
+  display: none;
+}
+
+body{
+    margin: 0;
+    background-color: #d2cbcb;
+}
+
+.search-switch{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search{
+  margin-left: 40px;
+}
+.search input{
+  min-width: 20vw;
+  margin-top: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.search button{
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #fdfcfc;
+  border-radius: 8px;
+}
+.search button:hover{
+  scale: 1.2;
+  color: rgb(230, 141, 58);
+  transition: 0.5s;
+}
+.switchMode button {
+  min-width: 8vw;
+  margin-top: 4px;
+  /* margin-left: 90vw; */
+  background-color: #333333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.switchMode button:hover{
+  scale: 1.2;
+  color: rgb(230, 141, 58);
+  transition: 0.5s;
+}
+
+/*----------------------------------------blogs---------------------------------------*/
+.blog-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0 30px;
+}
+.blog-card {
+  max-height: 600px;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.blog-card a img{
+  margin-top: 20px;
+  border-radius: 8px;
+  height: 300px;
+  width: 400px;
+}
+.blog-card h3, p{
+  margin: 0px 10px;
+}
+
+.blog-card a img:hover{
+  scale: 1.09;
+  transition: 0.5s;
+}
+
+/* ------------------------------------------pagination--------------------------------- */
+.pages-bar{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.page{
+  height: 30px;
+  width: 30px;
+  border: solid 1px;
+  margin: 10px 10px;
+  text-align: center;
+  text-decoration: none;  
+  border-radius: 2px;
+  color: #333;
+}
+.page:hover{
+  scale: 1.2;
+  color: rgb(134, 140, 140);
+  transition: 0.5s;
+}
+
+.active{
+  font-weight: bold;
+  border-color: rgb(230, 141, 58); 
+  color: rgb(230, 141, 58); 
+}
+
+/*-----------------------------style for blog.html--------------------------------*/
+.accr{
+  display:flex;
+  justify-content: space-between;
+}
+.share a img{
+  margin-top: 8px;
+  width: 25px;
+  margin-right: 10px;
+}
+.sfont{
+  margin-left:10px;
+  margin-top: 10px;
+}
+.sfont button{
+  width: 25px;  
+  margin-right: 10px;
+}
+
+.blog-container{
+  margin: 20px 250px;
+}
+.blog-container img{
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-container h2{
+  margin: 5px;
+  text-align: center;
+  font-size: 27px;
+  color: #343333;
+}
+.blog-container p{
+  margin-bottom: 12px;
+}
+
+/* ------------------------------------about-us.html--------------------------------- */
+.about-us-content{
+  color: rgb(255, 255, 255);
+  background-image: url("images/img6.jpg");
+  border-radius: 10px;
+  filter: brightness(60%);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 100px;
+  font-size: 18px;
+}
+.block{
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.block h2{
+  text-align: center;
+}
+.block ul li{
+  margin-bottom: 8px;
+}
+
+/* --------------------------header-------------------------------------- */
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  border: solid 0.4px rgb(113, 112, 110);
+  border-radius: 4px;
+}
+
+.logo img {
+  width: 50px; /* Adjust the width as per your logo size */
+  height: auto;
+  border-radius: 10px;
+}
+#tech-travel-taste{
+  font-size: 15px;
+  font-weight:300;
+}
+/* Center the content inside the header */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the logo */
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo a img{
+  border-radius: 50%;
+}
+.navigation-bar ul {
+  list-style: none;
+}
+
+.navigation-bar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation-bar ul li:last-child {
+  margin-right: 0;
+}
+
+.navigation-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change link color on hover */
+.navigation-bar ul li a:hover {
+  color: rgb(230, 141, 58); 
+}
+
+/* --------------------------------Footer-----------------------------------------*/
+.footcontainer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Style for the footer content */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Style for individual footer sections */
+.foots {
+  width: 30%; /* Adjust the width as per your design */
+  margin-bottom: 20px;
+}
+
+/* Style for footer section headings */
+.foots h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for footer links */
+.foots a {
+  color: #ffffff; 
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease; 
+}
+
+/* Change link color on hover */
+.foots a:hover {
+  color: rgb(230, 141, 58);
+}
+
+/* Style for social media icons */
+.images img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footcontainer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
